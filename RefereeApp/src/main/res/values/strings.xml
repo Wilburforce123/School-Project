@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Referee App</string>
+    <string name="goals">Goals</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="hasScored">False</string>
+    <string name="Substitute">Substitute</string>
+</resources>

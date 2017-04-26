@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/background_state_drawable"
+    android:clickable="true"
+    android:gravity="center_vertical|left"
+    android:paddingLeft="16dp"
+    android:id="@+id/cont_item_root">
+
+    <ImageView
+        android:id="@+id/im_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_directions_run_black_36dp"
+        android:tint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/lbl_item_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_item_icon"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="48dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:text="Player 1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/lbl_item_sub_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_item_text"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="48dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:text="Goalkeeper"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/im_item_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/im_item_icon_secondary"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:src="@drawable/background_state_drawable" />
+
+    <ImageView
+        android:id="@+id/im_item_icon_secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/im_icon_red_card"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="16dp"
+        android:src="@drawable/background_state_drawable" />
+
+    <ImageView
+        android:id="@+id/im_icon_red_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="16dp"
+        android:src="@drawable/background_state_drawable" />
+
+
+</RelativeLayout>

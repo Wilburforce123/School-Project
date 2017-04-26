@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.localadmin.WillRecyclerView.ui.DetailActivity">
+
+    <TextView
+        android:id="@+id/lbl_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:id="@+id/lbl_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/goals"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/lbl_position"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:text="@string/minus"
+        android:layout_width="50dp"
+        android:id="@+id/goalsMinusButton"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:onClick="minusOne"/>
+
+    <Button
+        android:text="@string/plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/goalsPlusButton"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/goals_scored_text"
+        android:layout_toEndOf="@+id/goals_scored_text"
+        android:onClick="addOne"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/goals_scored_text"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/goalsMinusButton"
+        android:layout_toEndOf="@+id/goalsMinusButton" />
+
+    <Button
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancel"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/save"
+        android:onClick="onSave" />
+
+    <Button
+        android:text="@string/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/cancel"
+        android:onClick="onCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/goals_scored_text"
+        android:layout_alignStart="@+id/goals_scored_text" />
+
+    <Button
+        android:text="@string/Substitute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:id="@+id/playerSubButton"
+        android:layout_below="@+id/goals_scored_text"
+        android:layout_alignRight="@+id/cancel"
+        android:layout_alignEnd="@+id/cancel"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="onSub"/>
+
+</RelativeLayout>
